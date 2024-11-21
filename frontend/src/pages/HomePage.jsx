@@ -6,6 +6,8 @@ import Card from "../components/Card";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, Zoom, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Hero from "../components/Hero";
+import Footer from "../components/Footer";
 
 export default function HomePage() {
   const [courses, setCourses] = useState([]);
@@ -40,6 +42,7 @@ export default function HomePage() {
         <Loadar />
       ) : (
         <>
+        <Hero />
           <div className="mb-4  p-4 flex flex-wrap gap-y-4  justify-around">
             {courses.length === 0 && (
               <h1 className="text-2xl  font-bold text-gray-800 p-y-4 text-center">
@@ -67,7 +70,10 @@ export default function HomePage() {
         theme="dark"
         transition={Zoom}
         limit={1}
+
       />
+    <Footer />
     </div>
+    
   );
 }

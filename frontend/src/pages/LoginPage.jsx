@@ -93,14 +93,14 @@ export default function LoginPage() {
             </button>
           )}
 
-          <h3 className="text-center">Or</h3>
+          {/* <h3 className="text-center">Or</h3>
           <div className="flex justify-center gap-4">
             <img
               src={GoogleIcon}
               alt="google"
               className="w-10 h-10 rounded-full cursor-pointer"
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <ToastContainer

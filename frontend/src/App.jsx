@@ -15,6 +15,8 @@ import SignUpPage from './pages/SignUpPage';
 import CourseDetailPage from './pages/CourseDetailPage';
 import ProfilePage from './pages/ProfilePage';
 import AIPage from './pages/AIPage';
+import ContactUs from "./pages/contactus";
+import Footer from './components/Footer';
 
 
 
@@ -32,7 +34,8 @@ function App() {
         <Route path="/course/:courseId" element={<CourseDetailPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/chatbot" element={<AIPage />} />
-
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/footer" element={<Footer />} /> 
 
       </Routes>
     </Router>

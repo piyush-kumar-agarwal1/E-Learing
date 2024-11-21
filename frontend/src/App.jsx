@@ -1,12 +1,9 @@
-
-import './App.css'
+import './App.css';
 import {
   BrowserRouter as Router,
   Routes,
   Route
-  // Link
 } from 'react-router-dom';
-
 
 import HomePage from './pages/HomePage';
 import Header from './components/Header';
@@ -15,16 +12,11 @@ import SignUpPage from './pages/SignUpPage';
 import CourseDetailPage from './pages/CourseDetailPage';
 import ProfilePage from './pages/ProfilePage';
 import AIPage from './pages/AIPage';
-import ContactUs from "./pages/contactus";
+import ContactUs from './pages/ContactUs'; // Corrected import path
 import Footer from './components/Footer';
 
-
-
-
 function App() {
-
   return (
-
     <Router>
       <Header />
       <Routes>
@@ -34,13 +26,9 @@ function App() {
         <Route path="/course/:courseId" element={<CourseDetailPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/chatbot" element={<AIPage />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="/footer" element={<Footer />} /> 
-
+        <Route path="/contact" element={<ContactUs />} /> {/* Corrected route */}
+        <Route path="/footer" element={<Footer />} />
       </Routes>
     </Router>
-    
-  )
+  );
 }
-
-export default App
